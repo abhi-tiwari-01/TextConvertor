@@ -34,7 +34,7 @@ Make sure you have Node.js and npm installed on your system.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/abhi-tiwari-01/TextConvertor
+   https://github.com/abhi-tiwari-01/TextConvertor.git
    ```
 
 2. Navigate to the project directory:
