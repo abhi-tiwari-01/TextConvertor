@@ -55,7 +55,7 @@ export default function TextForm(props) {
         <div className="mb-3">
           <textarea
             style={{
-              backgroundColor: props.mode === 'dark' ? 'grey' : 'white',
+              backgroundColor: props.mode === 'dark' ? '#23396f' : 'white',
               color: props.mode === 'dark' ? 'white' : 'black',
             }}
             className="form-control"
@@ -65,19 +65,19 @@ export default function TextForm(props) {
             rows="5"
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleCapitalizeClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleCapitalizeClick}>
           Capitalize Every Word
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleScClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleScClick}>
           Convert to Sentence Case
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleClearClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleClearClick}>
           Clear Text
         </button>
       </div>

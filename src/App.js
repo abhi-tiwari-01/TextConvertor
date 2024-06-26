@@ -1,12 +1,11 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import About from './Components/About';
 import Alert from './Components/Alert';
 
-let name = 'Abhishek';
 function App() {
   const [mode, setMode] = useState('light'); 
   const [alert, setAlert] = useState(null);
@@ -24,7 +23,7 @@ function App() {
   const toggleMode = () => {
     if (mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = 'grey';
+      document.body.style.backgroundColor = '#13172f';
       showAlert('Dark mode has been enabled', 'success');
       document.title = 'TextConverter - Dark';
     } else {
@@ -47,7 +46,7 @@ function App() {
       <div className="container my-3">
       <Routes>
           <Route path="/" element={<TextForm showAlert={showAlert} heading="Welcome to Abhishek's Text Converter Website" mode={mode} />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About mode={mode}/>} />
         </Routes>
       </div>
     </>
